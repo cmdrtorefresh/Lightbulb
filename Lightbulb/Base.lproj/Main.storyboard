@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lightbulb.png" translatesAutoresizingMaskIntoConstraints="NO" id="UIF-Cb-x8j">
+                                <rect key="frame" x="112" y="341" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UIF-Cb-x8j" secondAttribute="height" multiplier="1:1" id="ZRu-OM-amw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lightbulbbright.png" translatesAutoresizingMaskIntoConstraints="NO" id="FsW-wt-cYH">
+                                <rect key="frame" x="112" y="341" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FsW-wt-cYH" secondAttribute="height" multiplier="1:1" id="xsT-h7-KRL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Light Bulb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKl-qm-tpB">
+                                <rect key="frame" x="20" y="35" width="335" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wKl-qm-tpB" secondAttribute="height" multiplier="335:72" id="XJd-My-ojW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LB2-la-pxO">
+                                <rect key="frame" x="18" y="237" width="339" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LB2-la-pxO" secondAttribute="height" multiplier="67:6" id="zOm-2v-huq"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.97801456151832455" green="0.90309581052619481" blue="0.068745803246293702" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.39968504581151831" green="0.35125640141704978" blue="0.019734365670666696" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="sliderButton:" destination="BYZ-38-t0r" eventType="valueChanged" id="XWr-nL-Lv0"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xtR-GE-0Fq">
+                                <rect key="frame" x="163" y="152" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xtR-GE-0Fq" secondAttribute="height" multiplier="49:31" id="ntx-tc-SaA"/>
+                                </constraints>
+                                <color key="onTintColor" red="1" green="0.87301254732283495" blue="0.039041202387244511" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchButton:" destination="BYZ-38-t0r" eventType="valueChanged" id="QHL-aD-yb4"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wKl-qm-tpB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2mq-X8-EQb"/>
+                            <constraint firstItem="UIF-Cb-x8j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="92" id="3Wd-tw-aNa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LB2-la-pxO" secondAttribute="trailing" id="7ag-NC-xER"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="wKl-qm-tpB" secondAttribute="leading" id="Ja6-Fq-siX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="LB2-la-pxO" secondAttribute="leading" id="KhD-hr-RNW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wKl-qm-tpB" secondAttribute="trailing" id="LUW-3I-ePt"/>
+                            <constraint firstItem="xtR-GE-0Fq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="137" id="Q9K-Z9-8iy"/>
+                            <constraint firstItem="xtR-GE-0Fq" firstAttribute="top" secondItem="wKl-qm-tpB" secondAttribute="bottom" constant="63" id="WZ8-Oq-c7i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UIF-Cb-x8j" secondAttribute="trailing" constant="93" id="a7K-ks-Igh"/>
+                            <constraint firstItem="FsW-wt-cYH" firstAttribute="top" secondItem="LB2-la-pxO" secondAttribute="bottom" constant="74" id="aSG-FH-nlh"/>
+                            <constraint firstItem="FsW-wt-cYH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="92" id="gM4-U9-7Am"/>
+                            <constraint firstItem="LB2-la-pxO" firstAttribute="top" secondItem="xtR-GE-0Fq" secondAttribute="bottom" constant="51" id="hpu-hQ-45J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xtR-GE-0Fq" secondAttribute="trailing" constant="149" id="iZ2-ek-dWo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FsW-wt-cYH" secondAttribute="trailing" constant="93" id="lMz-sT-XQi"/>
+                            <constraint firstItem="UIF-Cb-x8j" firstAttribute="top" secondItem="LB2-la-pxO" secondAttribute="bottom" constant="74" id="z3w-kE-jzR"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Slider" destination="LB2-la-pxO" id="ydV-DK-zLo"/>
+                        <outlet property="lightBright" destination="FsW-wt-cYH" id="Wf2-L9-UKR"/>
+                        <outlet property="lightBulb" destination="UIF-Cb-x8j" id="WDn-nb-I1B"/>
+                        <outlet property="switch" destination="xtR-GE-0Fq" id="hwf-1n-j39"/>
+                        <outlet property="title" destination="wKl-qm-tpB" id="UPi-0S-5op"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="386.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lightbulb.png" width="256" height="256"/>
+        <image name="lightbulbbright.png" width="256" height="256"/>
+    </resources>
+</document>
